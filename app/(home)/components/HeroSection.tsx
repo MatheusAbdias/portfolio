@@ -1,8 +1,9 @@
 import Link from "next/link";
 import React from "react";
-import { MovingBorder, MovingBorderBtn } from "./ui/moving-border";
+import { MovingBorderBtn } from "./ui/moving-border";
+import Title from "./Title";
 
-export default function HeroSection() {
+const HeroSection: React.FC = () => {
   return (
     <div className="min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between">
       <div className="space-y-10 text-center lg:text-left">
@@ -15,20 +16,14 @@ export default function HeroSection() {
         </h1>
         <p className="md:w-96 text-lg text-gray-300">
           {
-            "Based in the BR, I am a backend developer with a passion for creating scalable and maintainable software, with a focus on Python and Golang ecosystem."
+            "Based in BR, I am a backend developer with a passion for creating scalable and maintainable software, with a focus on Python and Golang ecosystem."
           }
         </p>
         <Link
           href={"mailto:matheus_abias@outlook.com"}
           className="inline-block group"
         >
-          <div>
-            <h1 className="text-3xl font-bold group-hover:text-green-400 transition-all">
-              Contact Me 📬
-            </h1>
-            <div className="w-40 h-2 bg-green-500 rounded-full"></div>
-            <div className="w-40 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
-          </div>
+          <Title text="Contact Me 📬" />
         </Link>
       </div>
 
@@ -52,4 +47,6 @@ export default function HeroSection() {
       </div>
     </div>
   );
-}
+};
+
+export default HeroSection;
