@@ -2,13 +2,9 @@ import React from "react";
 import {
   SiAmazonaws,
   SiDjango,
-  SiNextdotjs,
   SiPostgresql,
   SiPython,
-  SiReactquery,
   SiRedis,
-  SiSupabase,
-  SiTailwindcss,
 } from "react-icons/si";
 import Title from "./Title";
 import Link from "next/link";
@@ -25,7 +21,7 @@ const Projects: React.FC = () => {
       background: "bg-indigo-500",
     },
     {
-      title: "Withe label Platform (Finder)",
+      title: "White label Platform (Finder)",
       tech: [SiPython, SiDjango, SiAmazonaws, SiPostgresql, SiRedis],
       link: "https://www.finder.b2bit.company/login/",
       cover: "/finder.png",

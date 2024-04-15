@@ -8,7 +8,6 @@ import {
   SiDjango,
   SiDocker,
   SiFastapi,
-  SiGit,
   SiGitlab,
   SiGoland,
   SiPostgresql,
