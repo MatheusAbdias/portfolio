@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5">
         {projects.map((project, index) => {
           return (
-            <Link key={index} href={project.link}>
+            <Link key={index} href={project.link} target="_blank">
               <div className={cn("p-5 rounded-md", project.background)}>
                 <DirectionAwareHover
                   imageUrl={project.cover}
