@@ -26,7 +26,7 @@ const Skills: React.FC = () => {
     { text: "PostgreSQL", icon: SiPostgresql },
     { text: "Redis", icon: SiRedis },
     { text: "Docker", icon: SiDocker },
-    { text: "Gitlab CI/CS", icon: SiGitlab },
+    { text: "Gitlab CI/CD", icon: SiGitlab },
     { text: "Terraform", icon: SiTerraform },
     { text: "AWS", icon: SiAmazonaws },
     { text: "Django", icon: SiDjango },
